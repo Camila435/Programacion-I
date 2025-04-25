@@ -1,0 +1,28 @@
+# Ignorar archivos de usuario y binarios
+.vscode/
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.exe
+*.dll
+*.pdb
+*.cache
+
+# Ignorar carpetas de node_modules (si usas JavaScript/TypeScript)
+node_modules/
+
+# Ignorar configuraciones locales
+*.local
+
+# Ignorar archivos personales (documentos, imágenes, etc.)
+*.pdf
+*.docx
+*.jpg
+*.png
+
+# Excluir archivos ejecutables y temporales
+*.exe
+*.out
+*.o
