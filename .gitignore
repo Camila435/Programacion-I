@@ -21,7 +21,6 @@ node_modules/
 *.docx
 *.jpg
 *.png
-!docs/resumen-prog-U1U2U3.pdf 
 
 # Excluir archivos ejecutables y temporales
 *.exe
