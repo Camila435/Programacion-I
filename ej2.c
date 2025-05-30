@@ -1,0 +1,1 @@
+/*se tiene un parrafo que esta formado por oraciones,cada oracion esta separada por 1 punto, cada palanbra de la oracion por 1 asterico, indicar cuantas oraciones tiene mi parrafo e indicar cual es la oracion que tiene mas palabras.*/
