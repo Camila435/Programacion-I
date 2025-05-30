@@ -58,5 +58,64 @@ Pasaje de parámetros:
 La función recibe una copia del valor original. Si la función modifica el valor, no afecta al original.
 2. Pasaje por referencia (usando punteros)
 La función recibe la dirección de la variable, por lo tanto, puede modificar el valor original.
+RECURSIVIDAD
+La recursividad es una técnica de programación en la que una función se llama a sí misma para resolver un problema más pequeño del mismo tipo.
+Es como cuando te mirás en un espejo frente a otro espejo y ves una imagen dentro de otra imagen... dentro de otra imagen...
+Una función recursiva tiene dos partes importantes:
+Caso base (condición de parada): evita que la función se llame infinitamente.
+Llamada recursiva: la función se llama a sí misma con un nuevo valor más cerca del caso base
+¿Qué pasa si NO hay caso base?
+La función se llamaría a sí misma para siempre → se produce un desbordamiento de pila (stack overflow) y el programa se cae… o EXPLOTA!!!! 
+¿Cuándo usar recursividad?
+Usá recursividad cuando:
+El problema se puede dividir en subproblemas más pequeños.
+
+
+No se necesita guardar muchos resultados intermedios (aunque esto puede optimizarse con técnicas como "memoización").
+
+
+Te conviene escribir menos código y más elegante (por ejemplo, para árboles, fractales, estructuras jerárquicas).
+Cuidados con la recursividad
+Siempre debe tener un caso base que detenga las llamadas.
+
+
+Puede ser más lenta que las soluciones iterativas si no se optimiza.
+
+
+Consume más memoria por las llamadas anidadas en la pila.
+ 🧠 Concepto
+Una función se llama a sí misma para resolver un problema.
+Se repite un bloque de código usando for, while o do-while.
+📚 Código más legible
+Sí, en problemas como factorial, torres de Hanoi, árboles.
+No tanto para problemas muy recursivos.
+🔁 Uso de memoria
+Alto: cada llamada ocupa espacio en la pila (stack).
+Bajo: usa una sola variable de control.
+🚀 Velocidad (performance)
+Más lento si hay muchas llamadas (por sobrecarga de stack).
+Más rápido en la mayoría de los casos.
+🧪 Riesgo de desbordamiento
+Sí, puede causar Stack Overflow si no tiene un caso base correcto.
+No hay riesgo de desbordamiento por sí solo.
+🧩 Adecuado para
+Problemas recursivos por naturaleza: árboles, combinaciones, fractales.
+Cálculos repetitivos como sumas, multiplicaciones, bucles comunes.
+👶 Fácil de entender al inicio
+No, puede ser confuso para principiantes.
+Sí, es más directo.
+🔄 Conversión a iterativo
+A veces difícil (ej: algoritmos con múltiples caminos como backtracking).
+Fácil de codificar y entender.
+LISTA
+Una lista es una estructura de datos dinámica que permite almacenar una colección de elementos de forma lineal. A diferencia de un array, una lista puede crecer y reducir su tamaño en tiempo de ejecución.
+En C, como no hay listas integradas como en otros lenguajes, se implementan usando estructuras (struct) y punteros (pointer).
+Lista simplemente enlazada
+Lista doblemente enlazada
+Lista circular (variante de las anteriores)
+Explicación del código
+struct Nodo define cómo luce un nodo (dato y puntero al siguiente).
+insertarAlInicio agrega un nuevo nodo al principio de la lista.
+mostrarLista recorre e imprime todos los nodos hasta que llega a NULL.
 
 */
