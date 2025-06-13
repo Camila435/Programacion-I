@@ -9,6 +9,13 @@ obj/
 *.dll
 *.pdb
 *.cache
+*.zip
+*.pptx
+*.txt
+*.dat
+
+
+
 
 # Ignorar carpetas de node_modules (si usas JavaScript/TypeScript)
 node_modules/
